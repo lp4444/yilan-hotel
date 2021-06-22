@@ -79,7 +79,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/yilan-hotel">
           <Searchform
             options={options}
             setOptions={setOptions}
