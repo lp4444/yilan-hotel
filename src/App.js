@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 //import "./App.css";
 import { useFetch } from "./useFetch";
 import Navbar from "./Navbar";
@@ -79,7 +78,6 @@ function App() {
   return (
     // <HashRouter basename={process.env.PUBLIC_URL}>
     <Router basename={process.env.PUBLIC_URL}>
-      {/* <Router> */}
       <Navbar />
       <Switch>
         <Route exact path="/">
@@ -89,15 +87,6 @@ function App() {
             InitialTrueOptions={InitialTrueOptions}
             trueOptions={trueOptions}
             setTrueOptions={setTrueOptions}
-            data={data}
-            pageData={pageData}
-            setPageData={setPageData}
-            hotels={hotels}
-            setHotels={setHotels}
-            filteredHotels={filteredHotels}
-            setFilteredHotels={setFilteredHotels}
-            page={page}
-            setPage={setPage}
           />
           <HotelList filteredHotels={filteredHotels} hotels={hotels} />
           <Buttons

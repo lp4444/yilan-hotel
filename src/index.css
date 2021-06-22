@@ -35,6 +35,8 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
+  --clr-purple-dark: hsl(278, 86%, 28%);
+  --clr-purple-light: rgb(206, 89, 241);
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -42,7 +44,8 @@ Variables
   --radiusl: 1rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
+  --max-width: 40rem;
+  --small-Width: 85vw;
   --fixed-width: 620px;
 }
 /*
@@ -96,6 +99,9 @@ body {
 }
 ul {
   list-style-type: none;
+}
+li {
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -151,12 +157,22 @@ p {
 /*  global classes */
 
 /* section */
-.section {
+/* .section {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
+} */
+.section {
+  padding: 5rem 0;
 }
-
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
@@ -252,21 +268,21 @@ searchForm
   padding: 0.25rem 0.5rem;
   margin: 0.15rem;
   border-radius: var(--radius);
-  border-color: var(--clr-primary-4);
-  color: var(--clr-primary-4);
+  border-color: var(--clr-purple-dark);
+  color: var(--clr-purple-dark);
   background: transparent;
   cursor: pointer;
   transition: var(--transition);
   font-weight: bold;
 }
 .active-btn {
-  background: var(--clr-primary-4);
+  background: var(--clr-purple-dark);
   color: white;
 }
 .btn:hover {
-  background: var(--clr-primary-6);
+  background: var(--clr-purple-light);
   color: white;
-  border-color: var(--clr-primary-6);
+  border-color: var(--clr-purple-light);
 }
 .list-container {
   width: 90vw;
@@ -346,6 +362,21 @@ searchForm
   /* font-size: 2rem; */
   font-weight: bold;
 }
+/* 
+====== 
+About
+======
+*/
+.about-section {
+  width: var(--small--Width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.about-section p {
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -381,7 +412,7 @@ searchForm
     max-width: 40rem;
   }
   .img-container {
-    height: 175px;
+    height: 232px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -393,6 +424,6 @@ searchForm
     grid-template-columns: 1fr 1fr;
   }
   .img-container {
-    height: 150px;
+    height: 255px;
   }
 }

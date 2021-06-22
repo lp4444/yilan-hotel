@@ -8,15 +8,6 @@ const Searchform = ({
   trueOptions,
   setTrueOptions,
   InitialTrueOptions,
-  data,
-  pageData,
-  setPageData,
-  hotels,
-  setHotels,
-  filteredHotels,
-  setFilteredHotels,
-  page,
-  setPage,
 }) => {
   const [mode, setMode] = useState({ districtState: false, classState: true });
 

@@ -21,6 +21,9 @@ const Hotel = ({
   const descriptionStyle = {
     color: "hsl(325, 62%, 57%)",
   };
+  const nameStype = {
+    color: "hsl(205, 63%, 48%)",
+  };
   if (!!Picture) {
     return (
       <article key={ID} className="hotel-container">
@@ -32,7 +35,7 @@ const Hotel = ({
 
         <div className="hotel-footer">
           <header>
-            <h4>{Name}</h4>
+            <h4 style={nameStype}>{Name}</h4>
             <h4>
               <ImPhone />:{Phone}
             </h4>
@@ -42,14 +45,16 @@ const Hotel = ({
           </h4>
 
           <h4 style={descriptionStyle}>
-            {`${Description}`.substring(0, 40)}...
+            {`${Description}`.substring(0, 36)}...
           </h4>
           {/* <h4>
             <CgWebsite />:{WebsiteUrl}
           </h4> */}
           <h4>{ParkingInfo}</h4>
           <h4 style={webStyle}>
-            <a href={WebsiteUrl}>官方網站</a>
+            <a href={WebsiteUrl} target="_blank ">
+              官方網站
+            </a>
           </h4>
 
           {/* <h4>{Description}</h4> */}
