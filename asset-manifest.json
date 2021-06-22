@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yilan-hotel/static/css/main.3684e4c7.chunk.css",
-    "main.js": "/yilan-hotel/static/js/main.7efd5ea1.chunk.js",
-    "main.js.map": "/yilan-hotel/static/js/main.7efd5ea1.chunk.js.map",
+    "main.js": "/yilan-hotel/static/js/main.81153a9d.chunk.js",
+    "main.js.map": "/yilan-hotel/static/js/main.81153a9d.chunk.js.map",
     "runtime-main.js": "/yilan-hotel/static/js/runtime-main.78fd1d7b.js",
     "runtime-main.js.map": "/yilan-hotel/static/js/runtime-main.78fd1d7b.js.map",
     "static/js/2.01bbf40d.chunk.js": "/yilan-hotel/static/js/2.01bbf40d.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.78fd1d7b.js",
     "static/js/2.01bbf40d.chunk.js",
     "static/css/main.3684e4c7.chunk.css",
-    "static/js/main.7efd5ea1.chunk.js"
+    "static/js/main.81153a9d.chunk.js"
   ]
 }
