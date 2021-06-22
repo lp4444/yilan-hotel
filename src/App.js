@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 //import "./App.css";
 import { useFetch } from "./useFetch";
 import Navbar from "./Navbar";
@@ -77,8 +77,8 @@ function App() {
 
   console.log("hotelslength", hotels.length);
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
+    // <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       {/* <Router> */}
       <Navbar />
       <Switch>
@@ -105,14 +105,14 @@ function App() {
             pageData={pageData}
             setPage={setPage}
             page={page}
-          />{" "}
+          />
         </Route>
         <Route path="/about">
           <About />
         </Route>
       </Switch>
-      {/* </Router> */}
-    </HashRouter>
+    </Router>
+    // </HashRouter>
   );
 }
 

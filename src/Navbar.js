@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { links } from "./data";
 const Navbar = () => {
@@ -30,8 +31,11 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
+                // <li key={id}>
+                //   <a href={url}>{text}</a>
+                // </li>
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <Link to={url}>{text}</Link>
                 </li>
               );
             })}
