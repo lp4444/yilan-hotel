@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/yilan-hotel/static/css/main.3684e4c7.chunk.css",
-    "main.js": "/yilan-hotel/static/js/main.626c7a11.chunk.js",
-    "main.js.map": "/yilan-hotel/static/js/main.626c7a11.chunk.js.map",
+    "main.js": "/yilan-hotel/static/js/main.7d14eff2.chunk.js",
+    "main.js.map": "/yilan-hotel/static/js/main.7d14eff2.chunk.js.map",
     "runtime-main.js": "/yilan-hotel/static/js/runtime-main.78fd1d7b.js",
     "runtime-main.js.map": "/yilan-hotel/static/js/runtime-main.78fd1d7b.js.map",
-    "static/js/2.01bbf40d.chunk.js": "/yilan-hotel/static/js/2.01bbf40d.chunk.js",
-    "static/js/2.01bbf40d.chunk.js.map": "/yilan-hotel/static/js/2.01bbf40d.chunk.js.map",
+    "static/js/2.0a07bf08.chunk.js": "/yilan-hotel/static/js/2.0a07bf08.chunk.js",
+    "static/js/2.0a07bf08.chunk.js.map": "/yilan-hotel/static/js/2.0a07bf08.chunk.js.map",
     "static/js/3.1a6cb2f2.chunk.js": "/yilan-hotel/static/js/3.1a6cb2f2.chunk.js",
     "static/js/3.1a6cb2f2.chunk.js.map": "/yilan-hotel/static/js/3.1a6cb2f2.chunk.js.map",
     "index.html": "/yilan-hotel/index.html",
     "static/css/main.3684e4c7.chunk.css.map": "/yilan-hotel/static/css/main.3684e4c7.chunk.css.map",
-    "static/js/2.01bbf40d.chunk.js.LICENSE.txt": "/yilan-hotel/static/js/2.01bbf40d.chunk.js.LICENSE.txt",
+    "static/js/2.0a07bf08.chunk.js.LICENSE.txt": "/yilan-hotel/static/js/2.0a07bf08.chunk.js.LICENSE.txt",
     "static/media/index.css": "/yilan-hotel/static/media/nanao.ba9ea135.jpg",
     "static/media/yilantravel.99554afe.jpg": "/yilan-hotel/static/media/yilantravel.99554afe.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.78fd1d7b.js",
-    "static/js/2.01bbf40d.chunk.js",
+    "static/js/2.0a07bf08.chunk.js",
     "static/css/main.3684e4c7.chunk.css",
-    "static/js/main.626c7a11.chunk.js"
+    "static/js/main.7d14eff2.chunk.js"
   ]
 }
