@@ -104,7 +104,7 @@ function App() {
             page={page}
           />{" "}
         </Route>
-        <Route path="/about">
+        <Route path="/yilan-hotel/about">
           <About />
         </Route>
       </Switch>
