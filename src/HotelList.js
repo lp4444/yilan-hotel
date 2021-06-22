@@ -3,7 +3,8 @@ import Hotel from "./Hotel";
 
 const HotelList = ({ filteredHotels, hotels }) => {
   const headerStyle = {
-    color: "hsl(125, 67%, 44%)",
+    // color: "hsl(125, 67%, 44%)",
+    color: "purple",
   };
   return (
     <>
