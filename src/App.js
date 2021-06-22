@@ -76,7 +76,7 @@ function App() {
 
   console.log("hotelslength", hotels.length);
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Switch>
         <Route exact path="/">
