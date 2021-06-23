@@ -29,7 +29,7 @@ const Hotel = ({
       <article key={ID} className="hotel-container">
         <img
           src={Picture.PictureUrl1 || yilantravel}
-          alt={Name}
+          alt={Picture.PictureDescription1 || Name}
           className="img-container"
         />
 
@@ -52,9 +52,12 @@ const Hotel = ({
           </h4> */}
           <h4>{ParkingInfo}</h4>
           <h4 style={webStyle}>
-            <a href={WebsiteUrl} target="_blank ">
-              官方網站
-            </a>
+            <CgWebsite />:
+            {WebsiteUrl ? (
+              <a href={WebsiteUrl} target="_blank ">
+                官方網站
+              </a>
+            ) : null}
           </h4>
 
           {/* <h4>{Description}</h4> */}

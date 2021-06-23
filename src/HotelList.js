@@ -8,7 +8,7 @@ const HotelList = ({ filteredHotels, hotels }) => {
   };
   return (
     <>
-      <h3 style={headerStyle}>共有{hotels ? hotels.length : 0}個地點</h3>
+      <h3 style={headerStyle}>共有{hotels ? hotels.length : 0}處地點</h3>
       <div className="list-container">
         {filteredHotels &&
           filteredHotels.map((filteredHotel) => {

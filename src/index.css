@@ -188,6 +188,7 @@ Navbar
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+  width: 100vw;
 }
 .nav-header {
   display: flex;
@@ -207,7 +208,7 @@ nav {
   color: var(--clr-primary-1);
   transform: rotate(90deg);
 }
-.bear {
+.yilan {
   height: 40px;
 }
 .links-container {
@@ -307,7 +308,8 @@ searchForm
   height: 200px;
   width: 100%;
   border: 0.25rem solid var(--clr-gold);
-  border-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
   display: block;
 }
 
@@ -380,6 +382,7 @@ About
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
+    /* max-width: var(--max-width); */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -413,6 +416,8 @@ About
   }
   .img-container {
     height: 232px;
+    border-bottom-left-radius: var(--radius);
+    border-top-right-radius: 0;
   }
 }
 @media screen and (min-width: 1200px) {

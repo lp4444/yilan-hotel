@@ -1,6 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-//import "./App.css";
 import { useFetch } from "./useFetch";
 import Navbar from "./Navbar";
 import Searchform from "./Searchform";
@@ -52,7 +51,7 @@ function App() {
   };
   const [trueOptions, setTrueOptions] = useState(InitialTrueOptions);
 
-  const { loading, data, setData, pageData, setPageData } = useFetch();
+  const { loading, data, pageData, setPageData } = useFetch();
   const [page, setPage] = useState(0);
 
   const [hotels, setHotels] = useState([]);
@@ -61,7 +60,7 @@ function App() {
 
   useEffect(() => {
     setHotels(multiPropsFilter(data, trueOptions));
-  }, [trueOptions]);
+  }, [trueOptions, data]);
 
   useEffect(() => {
     setPageData(paginate(hotels));
